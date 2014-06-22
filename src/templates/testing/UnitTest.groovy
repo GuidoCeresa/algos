@@ -1,11 +1,9 @@
-@artifact.package@import grails.test.mixin.TestMixin
-import grails.test.mixin.support.GrailsUnitTestMixin
+@artifact.package@
 import spock.lang.Specification
 
 /**
  * See the API for {@link grails.test.mixin.support.GrailsUnitTestMixin} for usage instructions
  */
-@TestMixin(GrailsUnitTestMixin)
 class @artifact.name@ extends Specification {
 
     def setup() {
