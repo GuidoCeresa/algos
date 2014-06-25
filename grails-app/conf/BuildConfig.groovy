@@ -79,7 +79,7 @@ grails.project.dependency.resolution = {
 
         //--plugin della algos
         compile ":algoslib:0.52"
-        compile ":algospref:0.67"
+        compile ":algospref:0.68"
         compile ":algosvers:0.34"
         compile ":algoslogo:0.28"
 
