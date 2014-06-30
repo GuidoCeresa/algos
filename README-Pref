@@ -1,5 +1,5 @@
 Plugin per gestire una tavola di preferenze standard.
-Grails: 2.4.1
+Grails: 2.4.2
 
 Tipologia dei tipi di valori utilizzabili:
     stringa('stringa', 'stringa', 'stringa'),
@@ -42,3 +42,8 @@ Librerie: LibPref, disponibile nell'applicazione finale
 Templates: usati solo internamente (esclusi dal JAR)
 Test: usati solo internamente (esclusi dal JAR)
 CSS: utilizza il css dell'applicazione finale (esclusi dal JAR)
+
+@TODO mancano i test
+@TODO modificare i valori booleani da testo a checkbox, utilizzando Ajax
+@TODO modificare i valori data, utilizzano un picker
+@TODO manca l'implementazione del tipo decimale

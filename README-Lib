@@ -1,5 +1,5 @@
 Plugin con le librerie di base da utilizzare sempre
-Grails: 2.4.1
+Grails: 2.4.2
 
 Viene installato di default dal plugin -algos-, oppure anche singolarmente
 
@@ -33,3 +33,6 @@ Scripts: ricopia il file i18n/algosvers.properties
 Templates: usati solo internamente (esclusi dal JAR)
 Test: usati solo internamente (esclusi dal JAR)
 CSS: utilizza il css dell'applicazione finale (esclusi dal JAR)
+
+@TODO mancano i test
+@TODO presentare la data in forma umanamente leggibile
