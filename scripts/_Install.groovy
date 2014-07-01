@@ -12,6 +12,7 @@ dest = dest + "/"
 String appDir = "grails-app/"
 String confDir = "${appDir}conf/"
 String i18Dir = "${appDir}i18n/"
+String jobsDir = "${appDir}jobs/"
 String assetsDir = "${appDir}assets/"
 String stylesheetsDir = "${assetsDir}stylesheets/"
 String viewsDir = "${appDir}views/"
@@ -21,6 +22,9 @@ copyFile(source, dest, "${appDir}README", "README-Algos")
 
 //--sovrascrive file main
 moveFile(source, dest, "${stylesheetsDir}main.css")
+
+//--sovrascrive file jobs
+moveFile(source, dest, "${jobsDir}RefreshJob.groovy")
 
 //--sovrascrive file index
 moveFile(source, dest, "${viewsDir}index.gsp")
