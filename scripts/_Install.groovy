@@ -24,7 +24,7 @@ copyFile(source, dest, "${appDir}README", "README-Algos")
 moveFile(source, dest, "${stylesheetsDir}main.css")
 
 //--sovrascrive file jobs
-moveFile(source, dest, "${jobsDir}RefreshJob.groovy")
+copyFile(source, dest, "${jobsDir}RefreshJob.groovy")
 
 //--sovrascrive file index
 moveFile(source, dest, "${viewsDir}index.gsp")
