@@ -11,8 +11,8 @@ class ${className}Controller {
 
     def index(Integer max) {
         if (!params.max) params.max = MAX
-        ArrayList menuExtra = null
-        ArrayList campiLista = null
+        ArrayList menuExtra
+        ArrayList campiLista
         def campoSort
         int recordsTotali
         String titoloLista = ''

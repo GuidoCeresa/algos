@@ -8,7 +8,7 @@ class AlgosGrailsPlugin {
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.4.2 > *"
 
-    // the other plugins this plugin depends on
+    // the other plugins th3s plugin depends on
     def dependsOn = [:]
     // mavenPublisher: "0.8 > *",     // maven-publisher
 

@@ -10,6 +10,10 @@ class ProvaController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
     private static int MAX = 20
 
+    def list() {
+        redirect(action: 'index', params: params)
+    } // fine del metodo
+
     def index(Integer max) {
         if (!params.max) params.max = MAX
         ArrayList menuExtra = null
@@ -30,7 +34,7 @@ class ProvaController {
         //--mappa con [campo:'nomeDelCampo', title:'titoloVisibile', sort:'ordinamento']
         //--se vuoto, mostra i primi n (stabilito nel templates:scaffoldinf:list)
         //--    nell'ordine stabilito nella constraints della DomainClass
-        campiLista = []
+        campiLista = ['stringa', 'intero', 'data', 'tempo', 'booleano', 'lungo']
         // fine della definizione
 
         //--regolazione dei campo di ordinamento
