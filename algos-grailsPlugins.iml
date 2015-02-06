@@ -25,9 +25,9 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$/target/work/plugins/algoslib-0.58">
-      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algoslib-0.58/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algoslib-0.58/grails-app/i18n" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/target/work/plugins/algoslib-0.59">
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algoslib-0.59/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algoslib-0.59/grails-app/i18n" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/target/work/plugins/algoslogo-0.30">
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algoslogo-0.30/src/groovy" isTestSource="false" />
@@ -168,4 +168,3 @@
     </orderEntry>
   </component>
 </module>
-
