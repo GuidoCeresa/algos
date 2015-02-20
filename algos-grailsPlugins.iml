@@ -9,7 +9,7 @@
           <root url="file://$MODULE_DIR$/target/work/plugins/mail-1.0.6/grails-app/views" relative="/" />
           <root url="file://$MODULE_DIR$/target/work/plugins/algoslogo-0.30/grails-app/views" relative="/" />
           <root url="file://$MODULE_DIR$/target/work/plugins/algosvers-0.36/grails-app/views" relative="/" />
-          <root url="file://$MODULE_DIR$/target/work/plugins/algospref-0.73/grails-app/views" relative="/" />
+          <root url="file://$MODULE_DIR$/target/work/plugins/algospref-0.74/grails-app/views" relative="/" />
         </webroots>
         <sourceRoots />
       </configuration>
@@ -36,11 +36,11 @@
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algoslogo-0.30/grails-app/domain" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algoslogo-0.30/grails-app/services" isTestSource="false" />
     </content>
-    <content url="file://$MODULE_DIR$/target/work/plugins/algospref-0.73">
-      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algospref-0.73/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algospref-0.73/grails-app/i18n" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algospref-0.73/grails-app/controllers" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algospref-0.73/grails-app/domain" isTestSource="false" />
+    <content url="file://$MODULE_DIR$/target/work/plugins/algospref-0.74">
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algospref-0.74/src/groovy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algospref-0.74/grails-app/i18n" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algospref-0.74/grails-app/controllers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algospref-0.74/grails-app/domain" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/target/work/plugins/algosvers-0.36">
       <sourceFolder url="file://$MODULE_DIR$/target/work/plugins/algosvers-0.36/grails-app/i18n" isTestSource="false" />
