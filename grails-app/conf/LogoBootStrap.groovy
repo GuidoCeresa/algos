@@ -1,7 +1,7 @@
 import it.algos.algoslogo.Evento
 import it.algos.algoslogo.EventoService
 
-class LogoBootStrap {
+public class LogoBootStrap {
 
     //--metodo invocato direttamente da Grails
     def init = { servletContext ->
