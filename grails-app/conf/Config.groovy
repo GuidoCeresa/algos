@@ -52,12 +52,12 @@ grails {
                 scriptlet = 'html' // escapes output from scriptlets in GSPs
                 taglib = 'none' // escapes output from taglibs
                 staticparts = 'none' // escapes output from static template parts
-            }
-        }
+            }// fine di grails.views.gsp.codecs
+        }// fine di grails.views.gsp
         // escapes all not-encoded output at final stage of outputting
         // filteringCodecForContentType.'text/html' = 'html'
-    }
-}
+    }// fine di grails.views
+}// fine di grails
 
 
 grails.converters.encoding = "UTF-8"
@@ -88,30 +88,56 @@ grails.hibernate.osiv.readonly = false
 environments {
     development {
         grails.logging.jul.usebridge = true
-    }
+    }// fine di environments.development
     production {
         grails.logging.jul.usebridge = false
         // TODO: grails.serverURL = "http://www.changeme.com"
-    }
-}
+    }// fine di environments.production
+}// fine di environments
 
 // log4j configuration
 log4j.main = {
     // Example of changing the log pattern for the default console appender:
     //
-    //appenders {
-    //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
-    //}
+    appenders {
+        console name: 'stdout', layout: pattern(conversionPattern: '%c{2} %m%n')
+        file name: 'bioAppender', file: '/logs/algosbio.log', maxFileSize: 20000
+        //file name: 'tomcatAppender', file: '/usr/local/apache-tomcat-6.0.18/logs/webbio.log', maxFileSize: 20000
+        //file name: 'tomcatAppender2', file: '/usr/local/apache-tomcat-6.0.20/logs/webbio.log', maxFileSize: 20000
+    }// fine di log4j.appenders
+    root {
+        //debug 'stdout', 'bioAppender'
+        info 'stdout', 'bioAppender'
+        //warn 'stdout', 'bioAppender'
+        //error 'stdout', 'bioAppender'
+        additivity = true
+    }// fine di log4j.root
 
-    error  'org.codehaus.groovy.grails.web.servlet',        // controllers
-           'org.codehaus.groovy.grails.web.pages',          // GSP
-           'org.codehaus.groovy.grails.web.sitemesh',       // layouts
-           'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
-           'org.codehaus.groovy.grails.web.mapping',        // URL mapping
-           'org.codehaus.groovy.grails.commons',            // core / classloading
-           'org.codehaus.groovy.grails.plugins',            // plugins
-           'org.codehaus.groovy.grails.orm.hibernate',      // hibernate integration
-           'org.springframework',
-           'org.hibernate',
-           'net.sf.ehcache.hibernate'
-}
+    error 'org.codehaus.groovy.grails.web.servlet',        // controllers
+            'org.codehaus.groovy.grails.web.pages',          // GSP
+            'org.codehaus.groovy.grails.web.sitemesh',       // layouts
+            'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
+            'org.codehaus.groovy.grails.web.mapping',        // URL mapping
+            'org.codehaus.groovy.grails.commons',            // core / classloading
+            'org.codehaus.groovy.grails.plugins',            // plugins
+            'org.codehaus.groovy.grails.orm.hibernate',      // hibernate integration
+            'org.springframework',
+            'org.hibernate',
+            'net.sf.ehcache.hibernate'
+
+    debug 'grails.app.conf'
+    debug 'grails.app.realm'
+}// fine di log4j
+
+// mail configuration
+grails {
+    mail {
+        host = "smtp.algos.it"
+        port = 25
+        username = "gac@algos.it"
+        password = "fulvia"
+        props = ["mail.smtp.auth": "true", "mail.smtp.port": "25"]
+    }// fine della closure mail
+}// fine di grails
+grails.mail.default.from="gac@algos.it"
+

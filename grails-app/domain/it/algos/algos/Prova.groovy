@@ -18,11 +18,11 @@ class Prova {
      */
     static constraints = {
         stringa(nullable: false, blank: false)
-        intero(nullable: true, blank: true)
-        data(nullable: true, blank: true)
-        tempo(nullable: true, blank: true)
-        booleano(nullable: true, blank: true)
-        lungo(nullable: true, blank: true)
+        intero()
+        data(nullable: true)
+        tempo(nullable: true)
+        booleano()
+        lungo()
     } // end of static constraints
 
     /**
