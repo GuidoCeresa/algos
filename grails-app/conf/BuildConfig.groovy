@@ -81,7 +81,7 @@ grails.project.dependency.resolution = {
         compile ":algoslib:0.62"
         compile ":algospref:0.76"
         compile ":algosvers:0.36"
-        compile ":algoslogo:0.32"
+        compile ":algoslogo:0.33"
 
     }// fine della closure plugins
 }// fine di grails.project.dependency.resolution
